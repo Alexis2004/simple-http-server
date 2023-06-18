@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTTP Server</title>
+  </head>
+  <body>
+    <div>
+      This page is loaded from one domain (<a href="http://localhost:3000/">http://localhost:3000/</a>)
+    </div>
+    <div>
+      The app below and its assets from another domain (<a href="http://localhost:4000/src/main.ts">http://localhost:4000/src/main.ts</a>)
+    </div>
+    <div id="app">
+      <script type="module" src="http://localhost:4000/@vite/client"></script>
+      <script type="module" src="http://localhost:4000/src/main.ts"></script>
+      <script type="module" src="http://localhost:4000/@vite-plugin-checker-runtime-entry"></script>
+    </div>
+  </body>
+</html>
